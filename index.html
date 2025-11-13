@@ -1,14 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instituto Esperança — Educação e Inclusão Social</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header><h1>Instituto Esperança — Transformando Vidas pela Educação</h1></header>
-  <main><p>Promovendo educação e inclusão social.</p></main>
-  <footer><p>© Instituto Esperança</p></footer>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Instituto Esperança</h1>
+      <nav>
+        <span class="menu-toggle">☰</span>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção principal -->
+  <section class="hero">
+    <h1>Transformando Vidas pela Educação</h1>
+    <p>O Instituto Esperança promove educação e inclusão social através de projetos que dão oportunidade e voz a todos.</p>
+    <img src="images/educacao.jpg" alt="Crianças estudando felizes" class="hero-img">
+  </section>
+
+  <!-- Seção sobre -->
+  <section class="container">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma organização sem fins lucrativos dedicada a promover o acesso à educação de qualidade e à inclusão social. Nossos programas ajudam jovens e adultos a desenvolverem habilidades essenciais para um futuro melhor.</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© Instituto Esperança — 2025 | Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    // Script simples para o menu responsivo
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>

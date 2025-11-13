@@ -1,7 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Projetos — Instituto Esperança</title><link rel="stylesheet" href="css/style.css"></head>
-<body><header><h1>Projetos do Instituto Esperança</h1></header>
-<main><p>Conheça nossos projetos de reforço escolar e inclusão digital.</p></main>
-<footer><p>© Instituto Esperança</p></footer></body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos — Instituto Esperança</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Instituto Esperança</h1>
+      <nav>
+        <span class="menu-toggle">☰</span>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de projetos -->
+  <section class="hero">
+    <h1>Nossos Projetos Sociais</h1>
+    <p>Conheça as iniciativas que promovem transformação através da educação e inclusão.</p>
+  </section>
+
+  <main class="container">
+    <article class="project">
+      <img src="images/aula-informatica.jpg" alt="Aula de informática" class="project-img">
+      <h2>Inclusão Digital</h2>
+      <span class="badge">Educação</span>
+      <p>Oferecemos cursos gratuitos de informática básica e avançada para jovens e adultos, ajudando na inserção no mercado de trabalho.</p>
+    </article>
+
+    <article class="project">
+      <img src="images/leitura-comunitaria.jpg" alt="Projeto de leitura comunitária" class="project-img">
+      <h2>Leitura Comunitária</h2>
+      <span class="badge">Cultura</span>
+      <p>Incentivamos a leitura através de bibliotecas itinerantes e rodas de leitura em comunidades carentes.</p>
+    </article>
+
+    <article class="project">
+      <img src="images/oficina-musica.jpg" alt="Oficina de música" class="project-img">
+      <h2>Oficina de Música</h2>
+      <span class="badge">Arte</span>
+      <p>Promovemos oficinas de canto, violão e percussão, mostrando que a música também educa e transforma.</p>
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© Instituto Esperança — 2025 | Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
