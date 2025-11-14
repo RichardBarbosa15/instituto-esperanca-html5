@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos — Instituto Esperança</title>
+
   <style>
 :root {
   --color-primary: #0a6;
@@ -81,20 +82,20 @@ nav a:hover {
   }
 }
 
-/* HERO OU TÍTULOS PRINCIPAIS */
-.hero, .page-title {
+/* HERO */
+.hero {
   text-align: center;
   padding: 2em 1em;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
 }
 
-.hero h1, .page-title h1 {
+.hero h1 {
   font-size: 2em;
   margin-bottom: .5em;
 }
 
-/* PADRONIZAÇÃO DE IMAGENS */
+/* Imagens */
 img {
   width: 100%;
   max-width: 600px;
@@ -104,6 +105,18 @@ img {
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.3em 0.8em;
+  border-radius: 8px;
+  margin: 0.5em 0 1em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 /* Conteúdo */
@@ -126,7 +139,7 @@ footer {
   padding: 1em;
   margin-top: 2em;
 }
-</style>
+  </style>
 </head>
 <body>
 
@@ -153,28 +166,27 @@ footer {
 
   <main class="container">
     <article class="project">
-      <img src="images/aula-informatica.jpg" alt="Aula de informática" class="project-img">
+      <img src="images/aula-informatica.jpg" alt="Aula de informática">
       <h2>Inclusão Digital</h2>
       <span class="badge">Educação</span>
       <p>Oferecemos cursos gratuitos de informática básica e avançada para jovens e adultos, ajudando na inserção no mercado de trabalho.</p>
     </article>
 
     <article class="project">
-      <img src="images/leitura-comunitaria.jpg" alt="Projeto de leitura comunitária" class="project-img">
+      <img src="images/leitura-comunitaria.jpg" alt="Projeto de leitura comunitária">
       <h2>Leitura Comunitária</h2>
       <span class="badge">Cultura</span>
       <p>Incentivamos a leitura através de bibliotecas itinerantes e rodas de leitura em comunidades carentes.</p>
     </article>
 
     <article class="project">
-      <img src="images/oficina-musica.jpg" alt="Oficina de música" class="project-img">
+      <img src="images/oficina-musica.jpg" alt="Oficina de música">
       <h2>Oficina de Música</h2>
       <span class="badge">Arte</span>
       <p>Promovemos oficinas de canto, violão e percussão, mostrando que a música também educa e transforma.</p>
     </article>
   </main>
 
-  <!-- Rodapé -->
   <footer>
     <p>© Instituto Esperança — 2025 | Todos os direitos reservados</p>
   </footer>
@@ -188,5 +200,4 @@ footer {
   </script>
 
 </body>
-
 </html>
